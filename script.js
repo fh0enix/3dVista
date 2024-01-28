@@ -207,7 +207,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
     "minHeight": 1,
     "transparencyActive": true,
     "toolTipShadowOpacity": 0,
-    "click": "this.setComponentVisibility(this.Container_9EFCCEBF_96CF_F03B_41D8_719389C3A0EB, true, 0, this.effect_98AADBB0_96C5_F0C5_41B2_1C4D08E503DB, 'showEffect', false); this.playList_4D4F7DE7_5082_B3FF_41AA_64EFE6059A3F.set('selectedIndex', 0)",
+    "click": "this.setComponentVisibility(this.Container_9EFCCEBF_96CF_F03B_41D8_719389C3A0EB, true, 0, this.effect_98AADBB0_96C5_F0C5_41B2_1C4D08E503DB, 'showEffect', false); this.playList_4D21A72A_5087_9076_41C9_540A0C52F560.set('selectedIndex', 0)",
     "rollOverIconURL": "skin/IconButton_87D69DC5_8E23_AB0F_41C9_0743A2FA3EED_rollover.png",
     "toolTipTextShadowColor": "#000000",
     "toolTipOpacity": 0.7,
@@ -3787,15 +3787,15 @@ TDV.PlayerAPI.defineScript({ "definitions": [
  "this.photo_4752B84C_4C63_15A8_41B8_79815C3443D9",
  "this.photo_47514988_4C63_16A8_41AF_8614FAB6B00A",
  {
-  "id": "playList_4D4F7DE7_5082_B3FF_41AA_64EFE6059A3F",
+  "id": "playList_4D21A72A_5087_9076_41C9_540A0C52F560",
   "class": "PlayList",
   "items": [
    {
-    "begin": "this.loopAlbum(this.playList_4D4F7DE7_5082_B3FF_41AA_64EFE6059A3F, 0)",
+    "begin": "this.loopAlbum(this.playList_4D21A72A_5087_9076_41C9_540A0C52F560, 0)",
     "media": "this.album_9D83BE5D_96CC_F07F_41D2_D123849CCDC8",
     "class": "PhotoAlbumPlayListItem",
     "player": "this.ViewerAreaLabeled_9FD7235A_96CD_9045_41D9_23A3BCBDB1C6PhotoAlbumPlayer",
-    "start": "this.changeBackgroundWhilePlay(this.playList_4D4F7DE7_5082_B3FF_41AA_64EFE6059A3F, 0, '#000000')"
+    "start": "this.changeBackgroundWhilePlay(this.playList_4D21A72A_5087_9076_41C9_540A0C52F560, 0, '#000000')"
    }
   ]
  },
@@ -4211,16 +4211,6 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "playbackBarProgressBackgroundColorDirection": "vertical"
  },
  {
-  "backgroundColorDirection": "vertical",
-  "gap": 10,
-  "backgroundColor": [
-   "#000000",
-   "#000000"
-  ],
-  "scrollBarVisible": "rollOver",
-  "paddingLeft": 0,
-  "overflow": "visible",
-  "paddingRight": 0,
   "children": [
    {
     "toolTipBorderRadius": 1,
@@ -4305,6 +4295,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
     "toolTipShadowOpacity": 0,
     "rollOverIconURL": "skin/IconButton_87BF50DD_8E22_593F_41AB_0C1A6F6F0062_rollover.png",
     "toolTipTextShadowColor": "#000000",
+    "visible": false,
     "toolTipOpacity": 0.7,
     "toolTipFontColor": "#FFFFFF",
     "propagateClick": false,
@@ -4361,6 +4352,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
     "click": "this.mainPlayList.set('selectedIndex', 5)",
     "rollOverIconURL": "skin/IconButton_87D4922A_8E23_D905_41BC_341D63668700_rollover.png",
     "toolTipTextShadowColor": "#000000",
+    "visible": false,
     "toolTipOpacity": 0.7,
     "toolTipFontColor": "#FFFFFF",
     "propagateClick": false,
@@ -4443,17 +4435,18 @@ TDV.PlayerAPI.defineScript({ "definitions": [
     "paddingTop": 0
    }
   ],
-  "backgroundColorRatios": [
-   0,
-   1
-  ],
+  "gap": 10,
+  "scrollBarVisible": "rollOver",
+  "paddingLeft": 0,
+  "overflow": "visible",
+  "paddingRight": 0,
   "paddingBottom": 0,
   "class": "Container",
   "scrollBarWidth": 10,
   "verticalAlign": "middle",
-  "top": "89%",
-  "layout": "horizontal",
   "minHeight": 50,
+  "top": "82.31%",
+  "layout": "horizontal",
   "propagateClick": false,
   "scrollBarOpacity": 0.5,
   "bottom": "0%",
@@ -4470,9 +4463,9 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "left": "0%",
   "borderRadius": 5,
   "minWidth": 240,
-  "right": "0.16%",
+  "right": "0%",
   "shadow": false,
-  "backgroundOpacity": 0.25,
+  "backgroundOpacity": 0,
   "paddingTop": 0
  },
  {
@@ -4605,6 +4598,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
     "class": "Container",
     "minHeight": 1,
     "layout": "horizontal",
+    "visible": false,
     "scrollBarMargin": 2,
     "propagateClick": false,
     "scrollBarOpacity": 0.5,
@@ -4977,74 +4971,6 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "right": "2%"
  },
  {
-  "children": [
-   {
-    "gap": 10,
-    "scrollBarVisible": "rollOver",
-    "width": "100%",
-    "paddingLeft": 0,
-    "height": "34.783%",
-    "overflow": "scroll",
-    "paddingRight": 0,
-    "scrollBarWidth": 10,
-    "paddingBottom": 0,
-    "verticalAlign": "middle",
-    "class": "Container",
-    "minHeight": 1,
-    "layout": "horizontal",
-    "scrollBarMargin": 2,
-    "propagateClick": false,
-    "scrollBarOpacity": 0.5,
-    "horizontalAlign": "left",
-    "data": {
-     "name": "Container header"
-    },
-    "creationPolicy": "delayed",
-    "id": "Container_8BF5DC9B_974C_B0FB_41BA_36EDF42D05EC",
-    "borderSize": 0,
-    "contentOpaque": false,
-    "scrollBarColor": "#000000",
-    "borderRadius": 0,
-    "minWidth": 1,
-    "backgroundOpacity": 0,
-    "shadow": false,
-    "paddingTop": 0
-   }
-  ],
-  "gap": 1,
-  "scrollBarVisible": "rollOver",
-  "width": "37.394%",
-  "paddingLeft": 0,
-  "height": 92,
-  "overflow": "visible",
-  "paddingRight": 0,
-  "paddingBottom": 0,
-  "scrollBarWidth": 10,
-  "verticalAlign": "bottom",
-  "class": "Container",
-  "minHeight": 1,
-  "layout": "vertical",
-  "propagateClick": false,
-  "scrollBarOpacity": 0.5,
-  "bottom": "3%",
-  "id": "Container_8A3F064F_9747_905B_41D4_9169FB3EB41E",
-  "scrollBarMargin": 2,
-  "data": {
-   "name": "-Discover Container"
-  },
-  "creationPolicy": "delayed",
-  "horizontalAlign": "left",
-  "borderSize": 0,
-  "contentOpaque": false,
-  "scrollBarColor": "#000000",
-  "left": "2%",
-  "borderRadius": 0,
-  "minWidth": 1,
-  "backgroundOpacity": 0,
-  "shadow": false,
-  "paddingTop": 0
- },
- {
   "backgroundColorDirection": "vertical",
   "gap": 10,
   "backgroundColor": [
@@ -5109,6 +5035,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "transparencyActive": true,
   "top": "2%",
   "rollOverIconURL": "skin/IconButton_AF1EA938_BF1B_7043_41E3_6C338E6745CB_rollover.png",
+  "visible": false,
   "propagateClick": false,
   "cursor": "hand",
   "horizontalAlign": "center",
@@ -5149,7 +5076,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "bottom": 0,
   "id": "veilPopupPanorama",
   "data": {
-   "name": "UIComponent28397"
+   "name": "UIComponent31937"
   },
   "borderSize": 0,
   "left": 0,
@@ -5176,7 +5103,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "bottom": 0,
   "id": "zoomImagePopupPanorama",
   "data": {
-   "name": "ZoomImage28398"
+   "name": "ZoomImage31938"
   },
   "borderSize": 0,
   "left": 0,
@@ -5225,7 +5152,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "horizontalAlign": "center",
   "id": "closeButtonPopupPanorama",
   "data": {
-   "name": "CloseButton28399"
+   "name": "CloseButton31939"
   },
   "layout": "horizontal",
   "borderColor": "#000000",
